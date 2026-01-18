@@ -183,8 +183,6 @@ header{
     border-radius: 50%;
     background-color: var(--button-color);
 }
-
-
 /* habits card section */
 #habit-section{
     margin-top: 60px;
@@ -211,6 +209,38 @@ header{
 #habit-section .habit-card-container .card .card-info{
     line-height: 18px;
 }
+
+/* run section */
+#run {
+    margin-top: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background: rgba(34, 34, 34, 1);
+    border-radius: 12px;
+}
+#run .run-content{
+    max-width: 40%;
+}
+#run .run-content .run-btn{
+    margin-top: 34px;
+    padding: 16px 71px;
+}
+#run .image-container{
+    width: 366px;
+    height: 312px;
+    border-radius: 18px;
+    background: url(../images/run.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:  right top;
+}
+
+
+
+
+
+
 /* responsive styles for ipad mini*/
 
 @media screen and (max-width:768px) {
@@ -254,6 +284,16 @@ header{
     margin: 58px auto 0;
     grid-template-columns: repeat(2,1fr);
     }
+
+    /* run section */
+    #run .image-container{
+        max-width: 256px;
+        background-position: center;
+    }
+    .run-tiltle{
+        font-size: 36px
+    }
+    
 }
 
 
@@ -302,4 +342,21 @@ header{
     grid-template-columns: 1fr;
     }
 
+    /* run-section */
+    #run{
+        flex-direction: column;
+        padding: 33px;
+        gap: 31px;
+
+    }
+    #run .run-content{
+    max-width: 100%;
+}
+    #run .run-content .run-btn{
+        width: 100%;
+    }
+    #run .image-container{
+        max-width: 100%;
+        height: 170px;
+    }
 }
