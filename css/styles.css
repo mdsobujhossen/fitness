@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 1);
+    color: #fff;
+}
+
+/* variable color */
+    :root{
+        --button-color:rgba(230, 83, 60, 1);
+    }
+
+/* shared styles */
+
+.container{
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+.logo-text{
+    color: rgba(230, 83, 60, 1);
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 120%;
+    font-style: italic;
+
+}
+
+
+/* normal styles */
+header{
+    padding: 40px 0;
+}
+#header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+#header-nav ul{
+    display: flex;
+    gap: 47px;
+    align-items: center;
+    list-style: none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 4px 20px 4px 4px;
+    border-radius: 39px;
+}
+#header-nav ul .home{
+    background-color: var(--button-color);
+    padding: 8px 20px;
+    border-radius: 46px;
+}
+#header-nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 120%;
+    
+}
+#header-nav .menu-icon{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive styles for ipad mini*/
+
+@media screen and (max-width:768px) {
+    /* shared styles */
+    .container{
+    max-width: 90%;
+}
+
+    /* header section */
+    #header-nav ul{
+        gap: 20px;
+    }
+}
+
+
+
+
+    /* mobile responsive */
+
+@media screen and (max-width:430px) {
+    /* shared styles */
+    .container{
+    max-width: 90%;
+    }
+
+    /* header section */
+    #header-nav .menu-icon{
+    display: block;
+    }
+    #header-nav .menu-icon i{
+        font-size: 24px;
+    }
+    #header-nav ul{
+        display: none;
+    }
+
+}
