@@ -43,6 +43,12 @@ body{
     padding: 16px 46px;
     border-radius: 42px;
     border: 1px solid var(--button-color);
+    transition: all 0.3s;
+}
+.primary-btn:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: #ec452c;
 }
 .secondery-btn{
     background-color: transparent;
