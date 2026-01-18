@@ -33,11 +33,25 @@ body{
     font-style: italic;
 
 }
-
-
+.primary-btn{
+    background-color: var(--button-color);
+    border-style: none;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #fff;
+    padding: 16px 46px;
+    border-radius: 42px;
+    border: 1px solid var(--button-color);
+}
+.secondery-btn{
+    background-color: transparent;
+    border: 1px solid #fff;
+}
 /* normal styles */
 header{
     padding: 40px 0;
+    background: linear-gradient(180deg, rgba(17.41, 17.41, 17.41, 1)0%, rgba(17.41, 17.41, 17.41, 0)100%);
 }
 #header-nav{
     display: flex;
@@ -72,14 +86,74 @@ header{
     display: none;
 }
 
+/* banner section */
+#banner{
+    margin-top: 32px;
+    justify-content: space-between;
+    align-items: center;
+}
+#banner .banner-content{
+    max-width: 520px;
+}
+#banner .banner-content .banner-title{
+    font-size: 78px;
+    font-weight: 900;
+    line-height: 120%;
+    margin-bottom: 28px;
+}
+#banner .banner-content .banner-description{
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 28px;
+}
+#banner .banner-content .button-container{
+    gap: 14px;
 
-
-
-
-
-
-
-
+}
+#banner .image-container{
+    position: relative;
+}
+#banner .image-container img{
+    max-width: 100%;
+}
+#banner .image-container .tool-kit{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    max-width: max-content;
+    position: absolute;
+    text-align: left;
+}
+#banner .image-container .tool-kit .number{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+#banner .image-container .tool-kit .info{
+    font-size: 14px;
+    opacity: 0.5;
+}
+#banner .image-container .tool-kit-1{
+    top: 125px;
+    right: -37px;
+}
+#banner .image-container .tool-kit-1 .number{
+    font-size: 38px;
+}
+#banner .image-container .tool-kit-2 {
+    align-items: center;
+    gap: 10px;
+    left: -63px;
+    bottom: 63px;
+}
+#banner .image-container .tool-kit-2 .ball{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--button-color);
+}
 
 
 
@@ -96,6 +170,25 @@ header{
     #header-nav ul{
         gap: 20px;
     }
+    /* banner section */
+    #banner {
+        flex-direction: column;
+        gap: 100px;
+    }
+    #banner .banner-content{
+    max-width: 600px;
+}
+    #banner .image-container{
+        text-align: center;
+    }
+    #banner .image-container .tool-kit-1{
+    top: 59px;
+    right: -17px;
+}
+    #banner .image-container .tool-kit-2{
+        bottom: 130px;
+        left: -25px;
+    }
 }
 
 
@@ -108,6 +201,12 @@ header{
     .container{
     max-width: 90%;
     }
+    .primary-btn {
+        padding: 16px 38px;
+    }
+    .primary-btn .club{
+        display: none;
+    }
 
     /* header section */
     #header-nav .menu-icon{
@@ -118,6 +217,12 @@ header{
     }
     #header-nav ul{
         display: none;
+    }
+
+    /* banner section */
+    #banner .banner-content .banner-title{
+        font-size: 36px;
+        max-width: 285px;
     }
 
 }
