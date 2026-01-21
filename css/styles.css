@@ -236,7 +236,58 @@ header{
     background-position:  right top;
 }
 
+/* trainings section */
+#trainings{
+    margin-top: 100px;
 
+}
+#trainings>.section-info{
+    max-width: 671px;
+}
+#trainings .trainings-images-container{
+    margin-top: 58px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,200px);
+}
+#trainings .trainings-images-container .item{
+    background-blend-mode: multiply;
+
+}
+#trainings .trainings-images-container .item-1{
+    background-color: rgba(6, 255, 210, 0.5);
+    background-image: url(../images/exercise1.jpg);
+    background-size: 323px 218px;
+}
+#trainings .trainings-images-container .item-2{
+    /* background-color: rgba(6, 255, 210, 0.5);
+    background-image: url(../images/exercise2.png);
+    background-size: 539px 256px; */
+    background: url(../images/exercise2.png),rgba(255, 0, 0, 0.3);
+    background-size: 539px 256px;
+    grid-column: 2/span 2;
+}
+#trainings .trainings-images-container .item-3{
+    background: url(../images/exercise3.png),rgba(0, 0, 0, 0.5);
+    background-size: 539px 256px;
+}
+#trainings .trainings-images-container .item-4{
+    background: url(../images/exercise4.png),rgba(0, 0, 0, 0.5);
+    background-size: 483px 240px;
+    grid-column: span 2;
+    justify-items: end;
+    padding: 20px 50px;
+}
+#trainings .trainings-images-container .item-5{
+    background: url(../images/exercise5.jpg),rgba(66, 255, 0, 0.6);
+    background-size: 288px 201px;
+    align-content: end;
+}
+#trainings .trainings-images-container .item-6{
+    background: url(../images/exercise6.jpg),rgba(0, 71, 255, 0.3);
+    background-size: 376px 250px;
+    text-align: right;
+}
 
 
 
@@ -335,7 +386,9 @@ header{
 
 
     /* habits-section */
-
+    #habit-section{
+    margin-top: 30px;
+    }
     #habit-section .habit-card-container{
     max-width: 70%;
     margin: 58px auto 0;
@@ -347,16 +400,42 @@ header{
         flex-direction: column;
         padding: 33px;
         gap: 31px;
+        margin-top: 66px;
 
     }
     #run .run-content{
     max-width: 100%;
-}
+    }
     #run .run-content .run-btn{
         width: 100%;
     }
     #run .image-container{
         max-width: 100%;
         height: 170px;
+    }
+
+
+
+    /* TRANINGS SECTION */
+    #trainings{
+    margin-top: 66px;
+
+    }
+    #trainings .trainings-images-container{
+    margin-top: 38px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,126px);
+    }
+    #trainings .trainings-images-container .item-3, 
+    #trainings .trainings-images-container .item-6{
+        display: none;
+    }
+    #trainings .trainings-images-container .item-2{
+    background-size: cover;
+    grid-column: auto;
+    }
+    #trainings .trainings-images-container .item-4{
+    background-size: cover;
+    grid-column: auto;
     }
 }
