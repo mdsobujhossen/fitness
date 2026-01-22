@@ -290,6 +290,62 @@ header{
 }
 
 
+/* TEAM SECTION */
+#team{
+    margin-top: 88px;
+
+}
+#team .team-card-container{
+    margin-top: 58px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,272px);
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 18px;
+}
+#team .team-card-container .team-card{
+    position: relative;
+    border-radius: 18px;
+    background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+#team .team-card-container .team-card-1{
+background-image: url(../images/trainer1.png);
+
+}
+#team .team-card-container .team-card-2{
+background-image: url(../images/trainer2.png);
+
+}
+#team .team-card-container .team-card-3{
+background-image: url(../images/trainer3.png);
+
+}
+#team .team-card-container .team-card-4{
+background-image: url(../images/trainer4.png);
+
+}
+#team .team-card-container .team-card-5{
+background-image: url(../images/trainer5.png);
+
+}
+#team .team-card-container .team-card-6{
+background-image: url(../images/trainer6.png);
+
+}
+
+#team .team-card-container .team-card .trainer-info{
+    position: absolute;
+    left: 18px;
+    bottom: 15px;
+}
+
+
+
+
 
 
 /* responsive styles for ipad mini*/
@@ -437,5 +493,12 @@ header{
     #trainings .trainings-images-container .item-4{
     background-size: cover;
     grid-column: auto;
+    }
+
+
+    /* TEAM SECTION */
+    #team .team-card-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,272px);
     }
 }
