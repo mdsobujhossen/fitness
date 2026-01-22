@@ -302,7 +302,7 @@ header{
     grid-template-rows: repeat(2,272px);
     gap: 20px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 18px;
 }
 #team .team-card-container .team-card{
@@ -345,11 +345,64 @@ background-image: url(../images/trainer6.png);
 
 
 
+/* FOOTER SECTION */
+footer{
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 88px;
+}
+footer .footer-container{
+    padding: 66px 0;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 102px;
+}
+footer .footer-container .footer-about{
+    grid-column: 1/span 2;
+}
+footer .footer-container .footer-about .footer-logo-text{
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+footer .footer-container .footer-about>p{
+    max-width: 443px;
+}
+
+footer .footer-container .importent-links .footer-links-title{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 120%;
+}
+footer .footer-container  .importent-links ul{
+    margin-top: 38px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+footer .footer-container  .importent-links ul li a{
+    text-decoration: none;
+    font-size: 23px;
+    line-height: 120%;
+    color: rgba(255, 255, 255, 0.5);
+}
+footer .footer-copy-right{
+    padding: 36px 0;
+    border-top:2px solid rgba(255, 255, 255, 0.1) ;
+    text-align: center;
+}
+footer .footer-copy-right .copy-right-text{
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+
 
 
 
 /* responsive styles for ipad mini*/
-
 @media screen and (max-width:768px) {
     /* shared styles */
     .container{
@@ -400,7 +453,13 @@ background-image: url(../images/trainer6.png);
     .run-tiltle{
         font-size: 36px
     }
-    
+
+
+    /* footer section */
+    footer .footer-container{
+        grid-template-columns: repeat(2,1fr);
+
+    }
 }
 
 
@@ -408,7 +467,7 @@ background-image: url(../images/trainer6.png);
 
     /* mobile responsive */
 
-@media screen and (max-width:430px) {
+@media screen and (max-width:576px) {
     /* shared styles */
     .container{
     max-width: 90%;
@@ -501,4 +560,15 @@ background-image: url(../images/trainer6.png);
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6,272px);
     }
+
+
+    /* footer section */
+    footer .footer-container{
+        grid-template-columns: 1fr;
+        gap: 30px;
+        
+    }
+    footer .footer-container .footer-about{
+    grid-column: auto;
+}
 }
